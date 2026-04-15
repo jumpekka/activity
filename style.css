@@ -127,7 +127,7 @@ pre span {
   0%   { box-shadow: 0 0 2px #0066ff, 0 0 5px #0044aa inset; }
   50%  { box-shadow: 0 0 3px #0088ff, 0 0 6px #0055cc inset; }
   100% { box-shadow: 0 0 2px #0066ff, 0 0 5px #0044aa inset; }
-}}
+}
 
 .ansi-rise-flames pre {
   animation: riseFlameFlicker 1.6s infinite alternate;

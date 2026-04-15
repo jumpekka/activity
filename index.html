@@ -45,7 +45,10 @@ window.addEventListener("DOMContentLoaded", () => {
       html += "\n"; // keep real newline
     } else {
       const r = Math.random().toFixed(2);
-      html += `<span style="--r:${r}">${ch}</span>`;
+ const isAmber =
+        ch !== " " && Math.random() < 0.08; // ~8% chance, non-space only
+      const cls = isAmber ? "amber" : "";
+      html += `<span class="${cls}" style="--r:${r}">${ch}</span>`;
     }
   }
 
