@@ -123,9 +123,9 @@ pre span {
 
 /* Chaotic flicker */
 @keyframes riseFlameFlicker {
-  0%   { opacity: 0.75; transform: translateY(0px); }
+  0%   { opacity: 0.95; transform: translateY(0px); }
   50%  { opacity: 1;    transform: translateY(-1px); }
-  100% { opacity: 0.7;  transform: translateY(0px); }
+  100% { opacity: 0.9;  transform: translateY(0px); }
 }
 
 .ansi-rise-flames pre {
@@ -141,6 +141,8 @@ pre span {
 
 @keyframes hideFlicker {
   0%   { opacity: 1; }
-  50%  { opacity: 0.3; }
+  25% { opacity: 0.2; }
+  50%  { opacity: 0.8; }
+  75%  { opacity: 0.3; }
   100% { opacity: 0; }
 }
