@@ -130,7 +130,7 @@ pre span {
 }
 
 .ansi-rise-flames pre {
-  animation: riseFlameFlicker 0.8s infinite alternate;
+  animation: riseFlameFlicker 1.6s infinite alternate;
 }
 
 .ansi-rise-flames2 pre span {
