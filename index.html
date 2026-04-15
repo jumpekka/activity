@@ -4,8 +4,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="ansi-rise-flames">
-<pre>     
+<div class="ansi-rise-flames2">
+<pre id="flame">
                       ░       ░    
          ▒     ▒ ░ ░ ▒    ▒ ░ ░     
     ░    ░ ▒ ▒░   ▒ ▒░ ▒ ░▒░▒ ░ ░ ░  
@@ -46,6 +46,16 @@ fetch('data.json')
       grid.appendChild(bulb);
     });
   });
+const pre = document.getElementById("flame");
+const text = pre.innerText;
+let html = "";
+
+for (const ch of text) {
+  const r = Math.random().toFixed(2);
+  html += `<span style="--r:${r}">${ch}</span>`;
+}
+
+pre.innerHTML = html;
 </script>
 
 </body>

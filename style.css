@@ -109,3 +109,15 @@ body {
 .ansi-rise-flames pre {
   animation: riseFlameFlicker 0.18s infinite alternate;
 }
+
+.ansi-rise-flames2 pre span {
+  display: inline-block;
+  animation: hideFlicker 0.4s infinite alternate;
+  animation-delay: calc(-0.4s * var(--r));
+}
+
+@keyframes hideFlicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 0; }
+}
