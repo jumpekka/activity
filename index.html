@@ -1,6 +1,25 @@
-<div class="bulb-grid">
-  <div class="bulb level-0"></div>
-  <div class="bulb level-3"></div>
-  <div class="bulb level-5"></div>
-  ...
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="bulb-grid"></div>
+
+<script>
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const grid = document.getElementById('bulb-grid');
+
+    data.days.forEach(level => {
+      const bulb = document.createElement('div');
+      bulb.className = 'bulb level-' + level;
+      grid.appendChild(bulb);
+    });
+  });
+</script>
+
+</body>
+</html>
