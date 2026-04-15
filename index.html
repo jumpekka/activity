@@ -54,12 +54,16 @@
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   const pre = document.getElementById("flame");
-  const text =  pre.textContent.replace(/<!--|-->/g, "");
+  const text =  pre.textContent.;
   let html = "";
 
   for (const ch of text) {
-    const r = Math.random().toFixed(2);
-    html += `<span style="--r:${r}">${ch}</span>`;
+    if (ch === "\n") {
+      html += "\n"; // keep real newline
+    } else {
+      const r = Math.random().toFixed(2);
+      html += `<span style="--r:${r}">${ch}</span>`;
+    }
   }
 
   pre.innerHTML = html;
