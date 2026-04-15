@@ -85,3 +85,14 @@ body {
   box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
 }
 
+.ascii-flames pre {
+  color: #3388ff; /* blue flames */
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 14px;
+  text-shadow: 0 0 6px #0066ff, 0 0 12px #0044aa;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+}
+
