@@ -85,6 +85,13 @@ body {
   box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
 }
 
+/* Make spans behave like real characters */
+pre span {
+  display: inline-block;
+  width: 1ch;
+}
+
+
 .ansi-rise-flames pre {
   color: #3388ff; /* blue ANSI flames */
   font-family: "Courier New", monospace;
