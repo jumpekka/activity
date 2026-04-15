@@ -123,20 +123,21 @@ pre span {
 
 /* Chaotic flicker */
 @keyframes riseFlameFlicker {
-  0%   { opacity: 0.95; transform: translateY(0px); }
-  50%  { opacity: 1;    transform: translateY(-1px); }
-  100% { opacity: 0.9;  transform: translateY(0px); }
+  0%   { opacity: 0.94; transform: translateY(0px); }
+  25%  { opacity: 1;    transform: translateY(-1px); }
+ 50%  { opacity: 0.93;    transform: translateY(0px); }
+  100% { opacity: 0.98;  transform: translateY(+1px); }
 }
 
 .ansi-rise-flames pre {
-  animation: riseFlameFlicker 0.18s infinite alternate;
+  animation: riseFlameFlicker 0.4s infinite alternate;
 }
 
 .ansi-rise-flames2 pre span {
   display: inline-block;
   width: 1ch;
-  animation: hideFlicker 0.4s infinite alternate;
-  animation-delay: calc(-0.4s * var(--r));
+  animation: hideFlicker 0.8s infinite alternate;
+  animation-delay: calc(-0.8s * var(--r));
 }
 
 @keyframes hideFlicker {
