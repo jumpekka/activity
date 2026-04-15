@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="style.c ">
 </head>
 <body>
-<div cla ="ansi-rise-flames">
+<div class ="ansi-rise-flames">
 <pre>        
   ░░░░▒░░▒▒░░░░▒▒░░░░░▒░░░░▒░░░░░░░░
   ░░▒▒▒▒▒▒░▒▒▒░▒▒▒▒░▒▒▒▒▒▒▒░░░░░░░░░
@@ -19,18 +19,18 @@
 </pre>
 </div>
 
-<div cla ="bbs-container">
+<div class ="bbs-container">
 
-  <div cla ="bbs-header">
-    <span cla ="bbs-title">[ FLEET LOG ]</span>
+  <div class ="bbs-header">
+    <span class ="bbs-title">[ FLEET LOG ]</span>
   </div>
 
-  <div cla ="bbs-frame">
+  <div class ="bbs-frame">
     <div id="bulb-grid"></div>
   </div>
 
-  <div cla ="bbs-footer">
-    <span cla ="bbs-footer-text">-=[ SoftWare Division · 2026 ]=-</span>
+  <div class ="bbs-footer">
+    <span class ="bbs-footer-text">-=[ SoftWare Division · 2026 ]=-</span>
   </div>
 
 </div>
@@ -42,7 +42,7 @@ fetch('data.json')
 
     data.days.forEach(level => {
       const bulb = document.createElement('div');
-      bulb.cla Name = 'bulb level-' + level;
+      bulb.class Name = 'bulb level-' + level;
       grid.appendChild(bulb);
     });
   });
