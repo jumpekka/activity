@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       const r = Math.random().toFixed(2);
  const isAmber =
-        ch !== " " && Math.random() < 0.04; // ~4% chance, non-space only
+        ch !== " " && Math.random() < 0.08; // ~4% chance, non-space only
       const cls = isAmber ? "amber" : "";
       html += `<span class="${cls}" style="--r:${r}">${ch}</span>`;
     }
