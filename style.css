@@ -85,11 +85,11 @@ body {
   box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
 }
 
-.ansi-flame-wall pre {
+.ansi-rise-flames pre {
   color: #3388ff; /* blue ANSI flames */
   font-family: "Courier New", monospace;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 18px;
   white-space: pre;
   margin: 0;
   padding: 0;
@@ -99,14 +99,13 @@ body {
     0 0 20px #002266;
 }
 
-/* Optional flicker animation */
-@keyframes ansiFlicker {
-  0%   { opacity: 0.85; }
-  50%  { opacity: 1; }
-  100% { opacity: 0.75; }
+/* Chaotic flicker */
+@keyframes riseFlameFlicker {
+  0%   { opacity: 0.75; transform: translateY(0px); }
+  50%  { opacity: 1;    transform: translateY(-1px); }
+  100% { opacity: 0.7;  transform: translateY(0px); }
 }
 
-.ansi-flame-wall pre {
-  animation: ansiFlicker 0.25s infinite alternate;
+.ansi-rise-flames pre {
+  animation: riseFlameFlicker 0.18s infinite alternate;
 }
-
