@@ -53,6 +53,18 @@
 
 
 <script>
+window.addEventListener("DOMContentLoaded", () => {
+  const pre = document.getElementById("flame");
+  const text = pre.textContent; // preserves newlines
+  let html = "";
+
+  for (const ch of text) {
+    const r = Math.random().toFixed(2);
+    html += `<span style="--r:${r}">${ch}</span>`;
+  }
+
+  pre.innerHTML = html;
+});
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
@@ -64,16 +76,6 @@ fetch('data.json')
       grid.appendChild(bulb);
     });
   });
-const pre = document.getElementById("flame");
-const text = pre.textContent; // preserves newlines
-let html = "";
-
-for (const ch of text) {
-  const r = Math.random().toFixed(2);
-  html += `<span style="--r:${r}">${ch}</span>`;
-}
-
-pre.innerHTML = html;
 </script>
 
 
