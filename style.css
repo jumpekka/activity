@@ -14,6 +14,7 @@ body {
   border: 6px solid #0044aa;
   box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
   background: linear-gradient(#001133, #000000);
+  animation: riseFlameFlicker 0.18s infinite alternate;
 }
 
 /* --- HEADER --- */
