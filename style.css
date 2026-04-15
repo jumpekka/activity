@@ -54,13 +54,14 @@ body {
   border-radius: 50%;
 }
 
-/* ANSI‑ish green glow levels */
-.level-0 { background-color: #111111; }
-.level-1 { background-color: #224422; }
-.level-2 { background-color: #337733; }
-.level-3 { background-color: #44aa44; }
-.level-4 { background-color: #66dd66; }
-.level-5 { background-color: #99ff99; }
+/* ANSI‑ish blue glow levels */
+.level-0 { background-color: #111122; }  /* almost black with blue tint */
+.level-1 { background-color: #112244; }  /* deep navy */
+.level-2 { background-color: #224477; }  /* dark blue */
+.level-3 { background-color: #3366aa; }  /* mid blue */
+.level-4 { background-color: #5599ff; }  /* bright electric blue */
+.level-5 { background-color: #99ccff; }  /* icy bright blue */
+
 
 /* --- FOOTER --- */
 .bbs-footer {
