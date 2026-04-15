@@ -1,18 +1,74 @@
+/* --- GENERAL BBS LOOK --- */
+body {
+  background-color: #000000;
+  color: #00aaff;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* --- BLUE FLAME BORDER --- */
+.bbs-container {
+  display: inline-block;
+  padding: 20px;
+  border: 6px solid #0044aa;
+  box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
+  background: linear-gradient(#001133, #000000);
+}
+
+/* --- HEADER --- */
+.bbs-header {
+  margin-bottom: 10px;
+  padding: 6px;
+  border-bottom: 2px solid #0044aa;
+}
+
+.bbs-title {
+  color: #66ccff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* --- INNER GREY FRAME --- */
+.bbs-frame {
+  background-color: #222222;
+  border: 3px solid #555555;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 10px #111111 inset;
+}
+
+/* --- BULB GRID --- */
 #bulb-grid {
   display: grid;
   grid-template-columns: repeat(14, 16px);
   gap: 4px;
+  justify-content: center;
 }
 
+/* --- BULBS --- */
 .bulb {
   width: 14px;
   height: 14px;
   border-radius: 50%;
 }
 
-.level-0 { background-color: #1a1a1a; }
-.level-1 { background-color: #2e3b2e; }
-.level-2 { background-color: #3f5f3f; }
-.level-3 { background-color: #5fa65f; }
-.level-4 { background-color: #7fdc7f; }
-.level-5 { background-color: #aaffaa; }
+/* ANSI‑ish green glow levels */
+.level-0 { background-color: #111111; }
+.level-1 { background-color: #224422; }
+.level-2 { background-color: #337733; }
+.level-3 { background-color: #44aa44; }
+.level-4 { background-color: #66dd66; }
+.level-5 { background-color: #99ff99; }
+
+/* --- FOOTER --- */
+.bbs-footer {
+  margin-top: 10px;
+  padding-top: 6px;
+  border-top: 2px solid #0044aa;
+}
+
+.bbs-footer-text {
+  color: #3388ff;
+  font-size: 12px;
+}
