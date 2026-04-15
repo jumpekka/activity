@@ -140,6 +140,15 @@ pre span {
   animation-delay: calc(-0.8s * var(--r));
 }
 
+/* Amber/yellow tongues inside blue flame */
+.ansi-rise-flames2 pre span.amber {
+  color: #ffdd66;
+  text-shadow:
+    0 0 6px #ffcc33,
+    0 0 12px #ff8800,
+    0 0 20px #aa5500;
+}
+
 @keyframes hideFlicker {
   0%   { opacity: 0.4; }
   25% { opacity: 0.05; }
