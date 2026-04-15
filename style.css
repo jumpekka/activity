@@ -124,13 +124,13 @@ pre span {
 /* Chaotic flicker */
 @keyframes riseFlameFlicker {
   0%   { opacity: 0.94; transform: translateY(0px); }
-  25%  { opacity: 1;    transform: translateY(-1px); }
+  25%  { opacity: 1;    transform: translateY(0px); }
  50%  { opacity: 0.93;    transform: translateY(0px); }
-  100% { opacity: 0.98;  transform: translateY(+1px); }
+  100% { opacity: 0.98;  transform: translateY(0px); }
 }
 
 .ansi-rise-flames pre {
-  animation: riseFlameFlicker 0.4s infinite alternate;
+  animation: riseFlameFlicker 0.8s infinite alternate;
 }
 
 .ansi-rise-flames2 pre span {
