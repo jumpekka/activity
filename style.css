@@ -126,6 +126,7 @@ body {
 
 .ansi-rise-flames2 pre span {
   display: inline-block;
+  width: 1ch;
   animation: hideFlicker 0.4s infinite alternate;
   animation-delay: calc(-0.4s * var(--r));
 }
