@@ -99,6 +99,20 @@ body {
     0 0 20px #002266;
 }
 
+.ansi-rise-flames2 pre {
+  color: #3388ff; /* blue ANSI flames */
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  line-height: 18px;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  text-shadow:
+    0 0 6px #0066ff,
+    0 0 12px #0044aa,
+    0 0 20px #002266;
+}
+
 /* Chaotic flicker */
 @keyframes riseFlameFlicker {
   0%   { opacity: 0.75; transform: translateY(0px); }
