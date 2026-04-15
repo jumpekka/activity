@@ -85,14 +85,28 @@ body {
   box-shadow: 0 0 20px #0066ff, 0 0 40px #0044aa inset;
 }
 
-.ascii-flames pre {
-  color: #3388ff; /* blue flames */
+.ansi-flame-wall pre {
+  color: #3388ff; /* blue ANSI flames */
   font-family: "Courier New", monospace;
-  font-size: 14px;
-  line-height: 14px;
-  text-shadow: 0 0 6px #0066ff, 0 0 12px #0044aa;
+  font-size: 16px;
+  line-height: 16px;
+  white-space: pre;
   margin: 0;
   padding: 0;
-  white-space: pre;
+  text-shadow:
+    0 0 6px #0066ff,
+    0 0 12px #0044aa,
+    0 0 20px #002266;
+}
+
+/* Optional flicker animation */
+@keyframes ansiFlicker {
+  0%   { opacity: 0.85; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.75; }
+}
+
+.ansi-flame-wall pre {
+  animation: ansiFlicker 0.25s infinite alternate;
 }
 
