@@ -37,33 +37,22 @@
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   const pre = document.getElementById("flame");
-  const lines = pre.textContent.split("\n");
-
-  const TOP_ROWS = 5;        // <--- change this to control how many rows get amber
-  const AMBER_CHANCE = 0.00; // <--- 8% chance per character
-
+  const text =  pre.textContent;
   let html = "";
 
-  lines.forEach((line, rowIndex) => {
-    for (const ch of line) {
+
+   for (const ch of text) {
+    if (ch === "\n") {
+      html += "\n"; // keep real newline
+    } else {
       const r = Math.random().toFixed(2);
-
-      // Only amber-ize if:
-      // - this row is within the top rows
-      // - the character is not a space
-      const isAmber =
-        rowIndex < TOP_ROWS &&
-        ch !== " " &&
-        Math.random() < AMBER_CHANCE;
-
-      const cls = isAmber ? "amber" : "";
-      html += `<span class="${cls}" style="--r:${r}">${ch}</span>`;
+      html += `<span style="--r:${r}">${ch}</span>`;
     }
-    html += "\n"; // preserve newline
-  });
+  }
 
   pre.innerHTML = html;
 });
+
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
